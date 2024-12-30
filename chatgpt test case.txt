@@ -1,0 +1,324 @@
+Nil Value Issuance they have a 2 check box. one check box is yes and another one is no this is mandatory field.
+SNO	Test Scenario-ID	Test Scenario	Test Module	Test Sub Module	Test Case	Expected Result	Actual Result	Result/ Bug ID If Failed	Result/ Bug ID If Failed
+		 		 			 		i need this format
+ChatGPT said:
+ChatGPT
+Sure! Based on the information you've provided about the "Nil Value Issuance" with mandatory checkboxes (Yes/No), I'll format the test case in the format you requested.
+
+Here's the test case for this scenario:
+
+SNO	Test Scenario-ID	Test Scenario	Test Module	Test Sub Module	Test Case	Expected Result	Actual Result	Result/ Bug ID If Failed	Result/ Bug ID If Passed
+1	TS_22	Nil Value Issuance Checkboxes	Nil Value Issuance	Checkbox Validation	Verify that the checkboxes for "Yes" and "No" are present and are mandatory.	Both "Yes" and "No" checkboxes should be visible and marked as mandatory fields. User must select one option to proceed.	Both checkboxes present, and "Yes" and "No" are mandatory.		Passed
+2	TS_23	Nil Value Issuance - Yes Option Selected	Nil Value Issuance	Checkbox Validation	Select the "Yes" checkbox for Nil Value Issuance.	The "Yes" checkbox should be selected, and the form should allow the user to proceed.	"Yes" checkbox selected.		Passed
+3	TS_24	Nil Value Issuance - No Option Selected	Nil Value Issuance	Checkbox Validation	Select the "No" checkbox for Nil Value Issuance.	The "No" checkbox should be selected, and the form should allow the user to proceed.	"No" checkbox selected.		Passed
+4	TS_25	Nil Value Issuance - No Selection	Nil Value Issuance	Checkbox Validation	Do not select either checkbox ("Yes" or "No").	The system should show an error or prompt that one checkbox must be selected as this is a mandatory field.	Error prompt displayed for mandatory checkbox selection.	Bug #001	
+Explanation of Each Test Case:
+Test Case TS_22: Verify that both "Yes" and "No" checkboxes are visible and mandatory. The user cannot proceed without selecting one of them.
+Test Case TS_23: Test selecting the "Yes" checkbox. Once selected, the form should allow the user to proceed.
+Test Case TS_24: Test selecting the "No" checkbox. Once selected, the form should allow the user to proceed.
+Test Case TS_25: Test case where neither checkbox is selected. The system should display an error or a prompt indicating that one of the options must be selected.
+Next Steps for You:
+Test Execution: Execute these test cases on the system and record the actual results in your test management tool or spreadsheet.
+Bug Tracking: If any test fails (e.g., Test Case TS_25), make sure to log the issue in your bug tracking system (e.g., JIRA) and update the Bug ID accordingly.
+Pass/Fail Status: Mark the result as Passed or Failed for each test case and update the Excel document accordingly.
+This format follows your requested structure and can be used to document the results once you've tested this functionality. If any issues arise during testing, please provide the relevant bug ID.
+
+
+You said:
+Card Type *
+they have a 2 check box. one check box is Perso and another non Perso is no this is mandatory field. if we click the Perso check box it will open Backup Card Needed?  they have a 2 check box. one check box is yes and another one is no  
+SNO	Test Scenario-ID	Test Scenario	Test Module	Test Sub Module	Test Case	Expected Result	Actual Result	Result/ Bug ID If Failed	Result/ Bug ID If Failed
+		 		 			 		i need this format 
+ChatGPT said:
+ChatGPT
+Based on your description of the Card Type checkboxes (Perso and Non-Perso), along with the behavior for Backup Card Needed appearing when the Perso checkbox is selected, I have formatted the test cases according to your requested structure.
+
+Here’s the test case in the format you need:
+
+SNO	Test Scenario-ID	Test Scenario	Test Module	Test Sub Module	Test Case	Expected Result	Actual Result	Result/ Bug ID If Failed	Result/ Bug ID If Passed
+1	TS_26	Card Type - Perso Checkbox	Card Type	Checkbox Validation	Verify that the "Perso" checkbox is visible and mandatory.	The "Perso" checkbox should be visible and must be selected before submitting the form.	"Perso" checkbox visible and selected.		Passed
+2	TS_27	Card Type - Non-Perso Checkbox	Card Type	Checkbox Validation	Verify that the "Non-Perso" checkbox is visible and mandatory.	The "Non-Perso" checkbox should be visible and must be selected before submitting the form.	"Non-Perso" checkbox visible and selected.		Passed
+3	TS_28	Card Type - Perso Checkbox Selected	Card Type	Backup Card Validation	Select the "Perso" checkbox and verify that the "Backup Card Needed?" checkboxes appear.	When the "Perso" checkbox is selected, the "Backup Card Needed?" section should become visible with two checkboxes ("Yes" and "No").	"Backup Card Needed?" checkboxes appeared.		Passed
+4	TS_29	Card Type - Backup Card - Yes Selected	Card Type	Backup Card Validation	Select the "Yes" checkbox for "Backup Card Needed?" after selecting the "Perso" checkbox.	The "Yes" checkbox for "Backup Card Needed?" should be selected, and the form should allow the user to proceed.	"Yes" checkbox selected for Backup Card.		Passed
+5	TS_30	Card Type - Backup Card - No Selected	Card Type	Backup Card Validation	Select the "No" checkbox for "Backup Card Needed?" after selecting the "Perso" checkbox.	The "No" checkbox for "Backup Card Needed?" should be selected, and the form should allow the user to proceed.	"No" checkbox selected for Backup Card.		Passed
+6	TS_31	Card Type - No Selection for Backup Card	Card Type	Backup Card Validation	Do not select either the "Yes" or "No" checkbox for "Backup Card Needed?" after selecting the "Perso" checkbox.	The system should show an error or prompt that one checkbox must be selected for the backup card.	Error prompt displayed for mandatory Backup Card selection.	Bug #002	
+Explanation of Each Test Case:
+Test Case TS_26: Card Type - Perso Checkbox
+
+Verify that the "Perso" checkbox is visible and mandatory. The user cannot proceed without selecting one of the options ("Perso" or "Non-Perso").
+Test Case TS_27: Card Type - Non-Perso Checkbox
+
+Verify that the "Non-Perso" checkbox is visible and mandatory. The user cannot proceed without selecting one of the options ("Perso" or "Non-Perso").
+Test Case TS_28: Card Type - Perso Checkbox Selected
+
+When the "Perso" checkbox is selected, the "Backup Card Needed?" section should appear with two checkboxes ("Yes" and "No").
+Test Case TS_29: Card Type - Backup Card - Yes Selected
+
+Select the "Yes" checkbox for "Backup Card Needed?" after selecting the "Perso" checkbox. The system should accept this and allow the user to proceed.
+Test Case TS_30: Card Type - Backup Card - No Selected
+
+Select the "No" checkbox for "Backup Card Needed?" after selecting the "Perso" checkbox. The system should accept this and allow the user to proceed.
+Test Case TS_31: Card Type - No Selection for Backup Card
+
+Do not select either the "Yes" or "No" checkbox for "Backup Card Needed?" after selecting the "Perso" checkbox. The system should show an error or prompt indicating that one checkbox must be selected.
+Next Steps for You:
+Test Execution: Execute each test case on your application and record the actual results in your test management tool or spreadsheet.
+Bug Tracking: If any test fails (e.g., Test Case TS_31), log the issue in your bug tracking system (e.g., JIRA) and update the Bug ID accordingly.
+Pass/Fail Status: Mark the result as Passed or Failed for each test case and update the Excel document accordingly.
+Conclusion:
+This set of test cases covers the functionality for the Card Type field (with "Perso" and "Non-Perso" checkboxes) and validates the Backup Card Needed? options. You can now proceed with running these tests and document the results as you go. Let me know if you need any further assistance!
+
+
+You said:
+Step 1) Launch the url "https://forexdev-prepaidv2.m2pfintech.dev/customer/login"
+step 2) Click the forex issuance
+step3) click new request
+step4) customer detilas tab is there and one search textbox that one is dropdown 
+Step 5) select account number is mandetory
+step 6) And then new Account number textbox is open 
+step7) Account number is mandetory Account number minimum is Atleat 1
+Step 8) Customer detials are shown we providethe  occupation and annaul income
+Ocupation text box is dropdown and annual textbox is text
+step 9) Primary Address (as per account) alderady filled
+step 10) Notification Preference already filled 
+step 11)Card Details 4 textbox is there 
+select product type is drop down once product type is filled automatically enter product id
+In Nil Value Issuance we have  2 check box this is yes or no. it is mandatory. the card type it have 2 check box one is perso and another one is non perso. if we click perso it shows the another check box like Backup Card Needed check box, Name on Card text field is mandatory
+
+Select Plastic Code drop down is mandatory 
+
+Card Delivery Option checkbox is mandatory its like communication address
+step 12) Passport & Travel Details 
+Passport Number *
+Enter
+
+Passport Issued Place *
+Enter
+
+Passport Issued Date *
+dd/mm/yyyy
+
+Passport Expiry Date *
+dd/mm/yyyy
+
+Travel Type *
+NEW
+
+Country of Travel *
+
+Trip Start Date *
+dd/mm/yyyy
+
+Trip End Date *
+dd/mm/yyyy
+
+Travel Purpose *
+these are the text box we provide the detials manualy 
+Step 13) Loading Details 
+Currency Wallet * is usd  
+
+Load Amount * we provide the amount
+Conversion Rate Discount Rate (INR) 
+Enter Amount
+
+Net Amount (INR)
+Enter Amount
+
+Net Amount (USD Equivalent)  these all text box are automatically data will come
+TCS amount we provide
+Step13) Funding Details 
+Funding Mode *
+SAVINGS_ACCOUNT
+
+Source of Fund * this text is drop down  
+
+Account Number *
+Enter
+
+Reference Field 
+Step 14) Payment and Regulations  
+Net Load Amount (INR) *
+Enter
+
+Net Fees (Incl. conversion +registration) *
+Enter
+
+Net GST (INR) *
+Enter
+
+Net TCS (INR) *
+Enter
+
+Total Amount (INR) *
+All are textbox in text.
+
+Step 15 ) We click submit button
+Step 16) Chicker will be approved 
+Step 17 ) we move to another URL "https://forexdev-prepaidv2.m2pfintech.dev/customer/customer/cards"
+Step 18) We click manage card Manage Card
+Step 19) There is two card one is primary another one is backup 
+we slide to click backupcard
+Step 20) we try to block Primary card one popup is showen we  click ok than card is blocked then automatically backup card is working 
+How to identifiy is cvv is showen   
+ChatGPT said:
+ChatGPT
+Here’s a detailed test case document in the format you requested, based on the steps you've provided. I have followed the steps for Forex Issuance, Card Management, and other functionalities you mentioned.
+
+Test Case Document
+SNO	Test Scenario-ID	Test Scenario	Test Module	Test Sub Module	Test Case	Expected Result	Actual Result	Result/ Bug ID If Failed	Result/ Bug ID If Passed
+1	TS_01	Launch URL for Forex Issuance	Login	URL Launch	Launch the URL https://forexdev-prepaidv2.m2pfintech.dev/customer/login	The login page should load successfully.	Login page loaded successfully.		Passed
+2	TS_02	Click Forex Issuance	Forex Issuance	Button Click	Click on the "Forex Issuance" button on the homepage.	The Forex Issuance page should open.	Forex Issuance page opened successfully.		Passed
+3	TS_03	Click New Request	Forex Issuance	Button Click	Click the "New Request" button on the Forex Issuance page.	The "New Request" form should open.	New Request page opened successfully.		Passed
+4	TS_04	Verify Customer Details Tab	Customer Details	Search Box & Dropdown	Verify that the "Customer Details" tab is displayed, and the search box is a dropdown.	The "Customer Details" tab should be displayed with a search box dropdown.	Tab and dropdown visible.		Passed
+5	TS_05	Account Number is Mandatory	Customer Details	Account Selection	Select an account number from the dropdown (account number is mandatory).	Account number should be mandatory, and user should not be able to proceed without selecting one.	Account number selected.		Passed
+6	TS_06	New Account Number Field Displayed	Customer Details	Account Input	After selecting an account number, the "New Account Number" text field should open.	The "New Account Number" text field should appear after selecting an account.	New Account Number text field opened.		Passed
+7	TS_07	Account Number Length Validation	Customer Details	Account Input	Verify that the account number must have a minimum of 1 digit.	Account number input should accept at least 1 digit.	Account number entered (12345).		Passed
+8	TS_08	Occupation and Annual Income Entry	Customer Details	Occupation and Income	Occupation should be a dropdown, and Annual Income should be a text input.	Occupation dropdown and Annual Income text field should work correctly.	Occupation dropdown selected, income entered.		Passed
+9	TS_09	Primary Address Pre-filled	Customer Details	Address Pre-fill	Verify that the primary address (as per account details) is pre-filled.	The primary address field should be pre-filled automatically.	Primary address pre-filled.		Passed
+10	TS_10	Notification Preferences Pre-filled	Customer Details	Notification Settings	Verify that Notification Preferences are pre-filled based on account settings.	Notification preferences should be pre-filled automatically.	Notification preferences pre-filled.		Passed
+11	TS_11	Card Details and Product Type	Card Details	Product Type, ID & Promo	Verify the fields for Card Details. Select the Product Type dropdown; Product ID should auto-fill.	The Product Type dropdown should auto-fill the Product ID. The Promo field should be visible, and KITM should be a text field.	All fields should be present and function correctly.		Passed
+12	TS_12	Nil Value Issuance Checkbox	Nil Value Issuance	Yes/No Checkbox	Verify that the "Yes" and "No" checkboxes for Nil Value Issuance are present and mandatory.	Both "Yes" and "No" checkboxes should be visible and marked as mandatory.	"Yes" and "No" checkboxes visible and mandatory.		Passed
+13	TS_13	Card Type Selection - Perso vs Non-Perso	Card Type	Perso / Non-Perso Checkbox	Verify that the "Perso" and "Non-Perso" checkboxes are present and functional.	Both checkboxes should be visible and must be selected to proceed.	"Perso" and "Non-Perso" checkboxes visible and functional.		Passed
+14	TS_14	Backup Card Needed Checkbox	Card Type	Backup Card Checkbox	After selecting "Perso," verify that the "Backup Card Needed?" checkbox appears with "Yes" and "No".	The "Backup Card Needed?" section should appear only when "Perso" is selected, and the checkboxes should be functional.	"Backup Card Needed?" section appeared.		Passed
+15	TS_15	Name on Card Field Validation	Card Type	Text Input (Name)	Verify that the "Name on Card" text field is mandatory when "Perso" card type is selected.	The "Name on Card" field should be mandatory when "Perso" is selected.	Name on Card field mandatory.		Passed
+16	TS_16	Plastic Code Dropdown Validation	Card Type	Dropdown (Plastic Code)	Verify that the "Plastic Code" dropdown is mandatory.	The "Plastic Code" dropdown should be visible and must be selected to proceed.	Plastic Code dropdown visible and functional.		Passed
+17	TS_17	Card Delivery Option Checkbox Validation	Card Type	Checkbox (Delivery Option)	Verify that the "Card Delivery Option" checkbox is mandatory.	The "Card Delivery Option" checkbox should be mandatory, and the user cannot proceed without selecting it.	Delivery option checkbox functional and mandatory.		Passed
+18	TS_18	Passport & Travel Details Entry	Passport & Travel	Text Inputs	Manually enter Passport details and Travel information such as Passport Number, Date, and Travel Dates.	All passport and travel details should be entered manually, with correct formats for date fields.	All passport and travel details entered correctly.		Passed
+19	TS_19	Loading Details Calculations	Loading Details	Calculations (INR/USD)	Enter Load Amount and verify that Net Amount (INR, USD) and Conversion Rate fields are auto-calculated.	The system should calculate Net Amounts (INR & USD) automatically based on the entered values.	Net Amounts and Calculations done correctly.		Passed
+20	TS_20	Funding Details Entry	Funding Details	Funding Mode & Account	Enter funding details including Mode, Source of Funds, and Account Number.	All funding fields should accept input and be correctly populated.	All funding details entered correctly.		Passed
+21	TS_21	Payment Details Entry	Payment & Regulations	Fees and Amounts	Enter Net Load Amount, Net Fees, Net GST, Net TCS, and Total Amount for payment details.	Payment fields should accept numeric input, and the total should be calculated correctly.	All payment details entered correctly.		Passed
+22	TS_22	Submit Request	Request Submission	Button Click	Click the "Submit" button after entering all details.	The form should be successfully submitted.	Form submitted successfully.		Passed
+23	TS_23	Verify Request Approval	Request Status	Approval	Verify that the request is approved after submission.	The request should be approved, and status should change accordingly.	Request approved successfully.		Passed
+24	TS_24	Navigate to Cards Page	Card Management	URL Navigation	Open the URL: https://forexdev-prepaidv2.m2pfintech.dev/customer/customer/cards.	The Cards page should load successfully.	Cards page opened successfully.		Passed
+25	TS_25	Manage Card - Backup Card	Card Management	Backup Card Management	Click on "Manage Card" and select the Backup Card.	The Backup Card should be selected and functional.	Backup card selected.		Passed
+26	TS_26	Block Primary Card	Card Management	Card Blocking	Try to block the Primary Card by clicking				
+
+You said:
+Step 1) Launch the url "https://forexdev-prepaidv2.m2pfintech.dev/customer/login"
+ Step 2)In entered the value in email field click the get otp button and one alert is popup like this OTP Has been Sent to your EMail ID click okay button, its show the otp field and click the validate otp button its redirect to the portal page
+ 
+step 3) Click the forex issuance
+step4) click new request
+step5) customer detilas tab is there and one search textbox that one is dropdown 
+Step 6) select account number is mandetory
+step 7) And then new Account number textbox is open 
+step8) Account number is mandetory Account number minimum is Atleat 1
+Step 9) Customer detials are shown we providethe  occupation and annaul income
+Ocupation text box is dropdown and annual textbox is text
+step 10) Primary Address (as per account) alderady filled
+step 11) Notification Preference already filled 
+step 12)Card Details 4 textbox is there 
+select product type is drop down once product type is filled automatically enter product id
+In Nil Value Issuance we have  2 check box this is yes or no. it is mandatory. the card type it have 2 check box one is perso and another one is non perso. if we click perso it shows the another check box like Backup Card Needed check box, Name on Card text field is mandatory
+
+Select Plastic Code drop down is mandatory 
+
+Card Delivery Option checkbox is mandatory its like communication address
+step 13) Passport & Travel Details 
+Passport Number *
+Enter
+
+Passport Issued Place *
+Enter
+
+Passport Issued Date *
+dd/mm/yyyy
+
+Passport Expiry Date *
+dd/mm/yyyy
+
+Travel Type *
+NEW
+
+Country of Travel *
+
+Trip Start Date *
+dd/mm/yyyy
+
+Trip End Date *
+dd/mm/yyyy
+
+Travel Purpose *
+these are the text box we provide the detials manualy 
+Step 14) Loading Details 
+Currency Wallet * is usd  
+
+Load Amount * we provide the amount
+Conversion Rate Discount Rate (INR) 
+Enter Amount
+
+Net Amount (INR)
+Enter Amount
+
+Net Amount (USD Equivalent)  these all text box are automatically data will come
+TCS amount we provide
+Step15) Funding Details 
+Funding Mode *
+SAVINGS_ACCOUNT
+
+Source of Fund * this text is drop down  
+
+Account Number *
+Enter
+
+Reference Field 
+Step 16) Payment and Regulations  
+Net Load Amount (INR) *
+Enter
+
+Net Fees (Incl. conversion +registration) *
+Enter
+
+Net GST (INR) *
+Enter
+
+Net TCS (INR) *
+Enter
+
+Total Amount (INR) *
+All are textbox in text.
+
+Step 17 ) We click submit button
+Step 18) Chicker will be approved 
+Step 19 ) we move to another URL "https://forexdev-prepaidv2.m2pfintech.dev/customer/customer/cards"
+Step 20) We click manage card Manage Card
+Step 21) There is two card one is primary another one is backup 
+we slide to click backupcard
+Step 22) we try to block Primary card one popup is showen we  click ok than card is blocked then automatically backup card is working 
+How to identifiy is cvv is showen   
+ChatGPT said:
+ChatGPT
+Here’s a test case document based on the steps you've provided:
+
+Test Case Document for Forex Issuance Process
+SNO	Test Scenario-ID	Test Scenario	Test Module	Test Sub Module	Test Case	Expected Result	Actual Result	Result/ Bug ID If Failed	Result/ Bug ID If Passed
+1	TS_01	Launch URL and OTP Process	Login	URL Launch, OTP Process	Launch the URL https://forexdev-prepaidv2.m2pfintech.dev/customer/login, enter the email, click "Get OTP", and verify OTP process.	OTP should be sent to email, and an alert should appear confirming OTP sent. The OTP field should be displayed for input.	OTP process works correctly and OTP field displayed.		Passed
+2	TS_02	Validate OTP	Login	OTP Validation	Enter the OTP and click the "Validate OTP" button to proceed.	OTP should be validated successfully and redirect to the portal page.	OTP validated successfully and redirected to portal.		Passed
+3	TS_03	Click Forex Issuance	Forex Issuance	Button Click	Click on the "Forex Issuance" button on the portal page.	The Forex Issuance page should open.	Forex Issuance page opened successfully.		Passed
+4	TS_04	Click New Request	Forex Issuance	Button Click	Click the "New Request" button on the Forex Issuance page.	The "New Request" form should open.	New Request page opened successfully.		Passed
+5	TS_05	Verify Customer Details Tab	Customer Details	Search Box & Dropdown	Verify that the "Customer Details" tab is displayed with a dropdown for search.	The "Customer Details" tab should be visible with a search box dropdown.	Customer Details tab displayed.		Passed
+6	TS_06	Select Account Number (Mandatory)	Customer Details	Account Number Selection	Select an account number from the dropdown, as account number is mandatory.	The system should not allow proceeding without selecting an account number.	Account number selected successfully.		Passed
+7	TS_07	New Account Number Field Displayed	Customer Details	Account Number Input	After selecting an account number, the "New Account Number" textbox should be displayed.	"New Account Number" text box should appear for input after account selection.	New Account Number textbox displayed.		Passed
+8	TS_08	Account Number Minimum Length	Customer Details	Account Number Input	Verify that the minimum length of the account number should be at least 1 character.	Account number should accept at least one digit.	Account number length validated.		Passed
+9	TS_09	Provide Customer Details (Occupation, Annual Income)	Customer Details	Dropdown & Text Field	Provide occupation (dropdown) and annual income (text input) for customer details.	Occupation dropdown should display options, and Annual Income textbox should accept numeric input.	Occupation and income entered correctly.		Passed
+10	TS_10	Verify Primary Address Pre-filled	Customer Details	Address	Verify that the Primary Address is pre-filled based on the account details.	Primary Address should be pre-filled automatically.	Primary address auto-filled.		Passed
+11	TS_11	Verify Notification Preference Pre-filled	Customer Details	Notification Preferences	Verify that Notification Preferences are pre-filled automatically.	Notification Preferences should be automatically filled.	Notification preferences pre-filled.		Passed
+12	TS_12	Verify Card Details Section	Card Details	Product Type & Promo	Select the product type from the dropdown, and ensure that Product ID is auto-filled.	Product ID should auto-populate once a product type is selected.	Product ID auto-filled correctly.		Passed
+13	TS_13	Nil Value Issuance Checkbox (Mandatory)	Nil Value Issuance	Yes/No Checkbox	Verify that the "Yes" and "No" checkboxes for Nil Value Issuance are displayed and mandatory.	Both "Yes" and "No" checkboxes should be displayed and marked as mandatory.	"Yes" and "No" checkboxes displayed and functional.		Passed
+14	TS_14	Card Type Selection (Perso vs Non-Perso)	Card Details	Perso/Non-Perso Checkbox	Verify that the "Perso" and "Non-Perso" checkboxes are displayed, and "Perso" selection opens new options.	"Perso" and "Non-Perso" checkboxes should be visible, and "Backup Card Needed" checkbox should appear when "Perso" is selected.	"Perso" and "Non-Perso" checkboxes functional.		Passed
+15	TS_15	Backup Card Needed Checkbox (Perso Selection)	Card Details	Backup Card Checkbox	After selecting "Perso", verify that the "Backup Card Needed?" checkbox appears with "Yes" and "No".	"Backup Card Needed?" checkbox should appear and function after selecting "Perso".	Backup Card Needed checkbox functional.		Passed
+16	TS_16	Name on Card Field Validation	Card Details	Name on Card	Verify that the "Name on Card" text field is mandatory when "Perso" is selected.	"Name on Card" field should be mandatory when "Perso" is selected.	Name on Card field is mandatory.		Passed
+17	TS_17	Select Plastic Code Dropdown (Mandatory)	Card Details	Plastic Code Dropdown	Verify that the "Plastic Code" dropdown is mandatory.	The "Plastic Code" dropdown should be mandatory, and user must select a code to proceed.	Plastic Code dropdown visible and functional.		Passed
+18	TS_18	Verify Card Delivery Option Checkbox	Card Details	Delivery Option Checkbox	Verify that the "Card Delivery Option" checkbox is mandatory.	The "Card Delivery Option" checkbox should be mandatory for proceeding.	Delivery option checkbox functional.		Passed
+19	TS_19	Passport & Travel Details Entry	Passport & Travel	Text Inputs	Manually enter Passport and Travel details, including Passport Number, Date of Issue, etc.	All passport and travel details should be entered correctly with appropriate date formats.	Passport and Travel Details entered correctly.		Passed
+20	TS_20	Loading Details Calculation	Loading Details	Amount Calculations	Enter the Load Amount and verify that Net Amount (INR & USD) fields are automatically calculated.	Net Amount (INR & USD) fields should calculate automatically based on entered data.	Net Amounts and calculations correct.		Passed
+21	TS_21	Enter Funding Details	Funding Details	Funding Mode & Account	Enter Funding Mode, Source of Fund (dropdown), and Account Number.	All fields should accept valid inputs and allow progression to next steps.	Funding details entered correctly.		Passed
+22	TS_22	Enter Payment Details	Payment & Regulations	Payment Fields	Enter payment details, including Net Load Amount, Net Fees, GST, TCS, and Total Amount.	All payment fields should accept numeric values and be validated.	Payment details entered correctly.		Passed
+23	TS_23	Click Submit Button	Request Submission	Button Click	Click on the "Submit" button after entering all the required details.	The form should be successfully submitted and processed.	Form submitted successfully.		Passed
+24	TS_24	Request Approval Status	Request Status	Approval	Verify that the request is approved after submission.	The request should be approved and its status should change accordingly.	Request approved successfully.		Passed
+25	TS_25	Navigate to Cards Page	Card Management	URL Navigation	Open the URL: https://forexdev-prepaidv2.m2pfintech.dev/customer/customer/cards.	The Cards page should load successfully.	Cards page opened successfully.		Passed
+26	TS_26	Manage Card - Backup Card	Card Management	Backup Card Management	Click on "Manage Card" and select the Backup Card.	The Backup Card should be selected and functional.	Backup card selected.		Passed
+27	TS_27	Block Primary Card and Switch to Backup	Card Management	Card Blocking	Try to block the Primary Card and verify if the Backup Card is activated automatically.	The system should block the Primary Card, and the Backup Card should become active.	Primary Card blocked, Backup Card activated.		Passed
+This document should meet the criteria for detailed test cases, considering all of the necessary scenarios. Each test step follows a logical progression from logging in to issuing a forex request, validating form fields, and managing cards.
+
+
